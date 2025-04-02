@@ -4,7 +4,7 @@ BOB is a Bitcoin-augmented rollup bringing experimentation and freedom of choice
 
 ## Learn more
 
-- [Website](https://www.gobob.club/)
+- [Website](https://www.gobob.one/)
 - [Docs](https://github.com/GobobOfficial/bob/tree/main/docs)
 
 ## Contribution
@@ -53,7 +53,7 @@ FOUNDRY_PROFILE=optimized npm run deploy-relay -- --network=testnet --testnet --
 
 # mainnet
 FOUNDRY_PROFILE=optimized npm run deploy-relay -- --network=mainnet --rpc-url=mainnet --init-height=latest --proof-length=20 --private-key=0x<exported-privatekey>
-FOUNDRY_PROFILE=optimized forge verify-contract --verifier blockscout --verifier-url https://explorer.gobob.club/api 0x9fe7ef727da3d79e0308ff43f31ea1d077ee9f41 src/relay/LightRelay.sol:LightRelay
+FOUNDRY_PROFILE=optimized forge verify-contract --verifier blockscout --verifier-url https://explorer.gobob.one/api 0x9fe7ef727da3d79e0308ff43f31ea1d077ee9f41 src/relay/LightRelay.sol:LightRelay
 FOUNDRY_PROFILE=optimized npm run update-relay -- --network=mainnet --rpc-url=mainnet --relay-address 0x9fe7ef727da3d79e0308ff43f31ea1d077ee9f41 --private-key=0x<exported-privatekey>
 ```
 
@@ -65,9 +65,9 @@ Proof length is the number of headers needed before and after a retarget to upda
 
 | Network               | Name           | Address                                                                                                                                 |
 | --------------------- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| BOB Sepolia (Testnet) | TestLightRelay | [0x377d6993b848013991e3d8b3028db74ec6fdf03a](https://bob-sepolia.explorer.gobob.club/address/0x377d6993b848013991e3d8b3028db74ec6fdf03a) |
-| BOB Sepolia (Signet) | FullRelayWithVerify | [0x604d1442e9534940992435D558807e3BE813a22A](https://bob-sepolia.explorer.gobob.club/address/0x604d1442e9534940992435D558807e3BE813a22A)             |
-| BOB Mainnet           | LightRelay     | [0x9fe7ef727da3d79e0308ff43f31ea1d077ee9f41](https://explorer.gobob.club/address/0x9fe7ef727da3d79e0308ff43f31ea1d077ee9f41)             |
+| BOB Sepolia (Testnet) | TestLightRelay | [0x377d6993b848013991e3d8b3028db74ec6fdf03a](https://bob-sepolia.explorer.gobob.one/address/0x377d6993b848013991e3d8b3028db74ec6fdf03a) |
+| BOB Sepolia (Signet) | FullRelayWithVerify | [0x604d1442e9534940992435D558807e3BE813a22A](https://bob-sepolia.explorer.gobob.one/address/0x604d1442e9534940992435D558807e3BE813a22A)             |
+| BOB Mainnet           | LightRelay     | [0x9fe7ef727da3d79e0308ff43f31ea1d077ee9f41](https://explorer.gobob.one/address/0x9fe7ef727da3d79e0308ff43f31ea1d077ee9f41)             |
 
 ## Security (Light Relay)
 
